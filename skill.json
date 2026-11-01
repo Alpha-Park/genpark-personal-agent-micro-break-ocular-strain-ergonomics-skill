@@ -1,0 +1,25 @@
+{
+  "name": "genpark-personal-agent-micro-break-ocular-strain-ergonomics-skill",
+  "version": "1.0.0",
+  "description": "Models ciliary eye muscle fatigue, suppressed blink rates, 20-20-20 optical recovery intervals, and Hansraj cervical spine biomechanical torque.",
+  "tools": [
+    {
+      "name": "calculate_ciliary_ocular_strain",
+      "description": "Calculates accommodation diopters, suppressed blink rate, and 20-20-20 micro-break urgency.",
+      "parameters": {
+        "screen_time_continuous_minutes": "float",
+        "viewing_distance_cm": "float (optional, default 50.0)",
+        "ambient_lux": "float (optional, default 350.0)",
+        "screen_nits": "float (optional, default 300.0)"
+      }
+    },
+    {
+      "name": "calculate_cervical_spine_torque",
+      "description": "Calculates Hansraj biomechanical cervical spine load and ergonomic corrections.",
+      "parameters": {
+        "head_tilt_angle_degrees": "float (optional, default 30.0)",
+        "head_mass_kg": "float (optional, default 5.0)"
+      }
+    }
+  ]
+}
